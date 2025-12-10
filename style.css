@@ -1,0 +1,246 @@
+body {
+    font-family: "Lexend", Arial, sans-serif;
+    background: linear-gradient(to right, #ff7373, #c250e1);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    margin-top: -8px;
+    margin-bottom: 20px;
+    color: #646464;
+    font-size: 14px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 13px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    transition: 0.2s;
+    font-size: 14px;
+    border: none;
+}
+
+textarea {
+    height: auto;
+    padding-top: 10px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4c98af;
+    background: #f8f8f8;
+    box-shadow: 0 0 0 3px rgba(167, 76, 175, 0.15);
+    outline: none;
+}
+
+.group-inline {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.group-inline label {
+    margin-right: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #43ace8;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #3e8bd7;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.error-field {
+    border-color: red !important;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.15);
+}
+
+.item {
+    background: #f0f0f0;
+    padding: 14px 18px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #555;
+    border-left: 3px solid #db6666;
+}
+
+.item b {
+    color: #333;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 2100px;
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
+a.btn-add {
+    display: inline-block;
+    background: #43ace8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a.btn-add:hover {
+    background: #3c85ce;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+th {
+    background: #43ace8;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #333;
+    background: #f4f3f3;
+}
+
+tr:nth-child(even) td {
+    background: #e5e5e5;
+}
+
+table, th, td {
+    border: none;
+}
+
+/* Responsif Tablet */
+@media (max-width: 1000px) {
+    .container {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* Responsif HP (Stack ke bentuk card) */
+@media (max-width: 686px) {
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        background: #ffffff;
+        padding: 17px;
+        border-radius: 14px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    td {
+        background: none !important;
+        padding: 6px 0;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+        display: block;
+    }
+
+    a.btn-add {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
