@@ -16,6 +16,7 @@ $data = mysqli_query($koneksir, "SELECT * FROM mhs ORDER BY id DESC");
 
     <div class="container">
         <h2>Daftar Data Mahasiswa</h2>
+        <p>Muhamad Farid Alfarizi - A12.2024.07218</p>
         <a href="tambahDataMhs.php" class="btn-add">Tambah Data Baru</a>
         <br><br>
 
