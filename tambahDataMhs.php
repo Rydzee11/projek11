@@ -9,7 +9,7 @@
 <body>
     <div class="card">
         <h2>Form Input Data Mahasiswa</h2>
-        <p>Silahkan Isi Data Anda di Bawah Ini Dengan Benar!</p>
+        <p>Muhamad Farid Alfarizi - A12.2024.07218</p>
 
         <form id="myForm" action="simpanDataMhs.php" method="POST">
             <label>NIM</label>
